@@ -89,16 +89,6 @@ class MemoryGame{
 
         mainTable.appendChild(sectionCard);
 
-        
-
-        
-        
-        
-
-
-        
-
-
 
     }
 

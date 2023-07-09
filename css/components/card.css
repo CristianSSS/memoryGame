@@ -34,10 +34,10 @@
     border: 5px dashed black;
 }
 
-.card-game:hover .front{
+.front-active{
     transform: perspective(700px) rotateY(180deg);
 }
 
-.card-game:hover .back{
+.back-active{
     transform: perspective(700px) rotateY(360deg);
 }
