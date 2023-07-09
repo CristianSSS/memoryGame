@@ -1,0 +1,9 @@
+.card-section{
+    margin: auto;
+    width: 600px;
+    display: grid;
+    gap: 10px;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    justify-content: center;
+}
