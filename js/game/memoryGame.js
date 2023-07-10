@@ -92,6 +92,16 @@ class MemoryGame{
 
     }
 
+    checkCoincidencia(card1, card2){
+        const cardOne = this.tablero[card1];
+        const cardTwo = this.tablero[card2];
+
+        if(cardOne === cardTwo) return true;
+        
+        return false;
+       
+    }
+
 }
 
 export default MemoryGame;
