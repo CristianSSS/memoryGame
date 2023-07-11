@@ -27,6 +27,7 @@ $(".card-game").click((e)=>{
         
 
     if(toques === 2){
+        
         toques = 0;
         
         backCard.addEventListener("transitionend",()=>{

@@ -1,9 +1,12 @@
 class MemoryGame{
+
     constructor(){
 
         this.cards = ["avion", "diana", "pata", "tierra", "ojo", "corazon", "foco", "telefono", "nieve", "estrella"];
 
-        this.tablero =[];
+        this.tablero = [];
+
+        this.idDescubierto = [];
 
         const totalCards = this.cards.length * 2;
 
@@ -93,10 +96,17 @@ class MemoryGame{
     }
 
     checkCoincidencia(card1, card2){
+
         const cardOne = this.tablero[card1];
         const cardTwo = this.tablero[card2];
 
-        if(cardOne === cardTwo) return true;
+        if(cardOne === cardTwo){
+
+            this.idDescubierto.push(cardOne);
+            this.idDescubierto.push(cardTwo);
+
+            console.log(this.idDescubierto)
+        };
         
         return false;
        
